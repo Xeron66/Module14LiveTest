@@ -46,6 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         itemBuilder: (context, index) {
           final recipe = _recipes[index];
+          // I have made the recipe card modular for code reuseability
           return RecipeCard(recipe: recipe);
         }
       ),

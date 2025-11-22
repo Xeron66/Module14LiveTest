@@ -18,6 +18,9 @@ class RecipeCard extends StatelessWidget {
     return Card(
       margin: EdgeInsets.all(16),
       child: ListTile(
+        // here each elements are each widgets
+        // my main idea is to make things as much modular as possible!
+        // thats why each of these are different widgets with a class!
         leading: RecipeId(recipe: recipe),
         title: RecipeTitle(recipe: recipe),
         subtitle: RecipeDescription(recipe: recipe),
